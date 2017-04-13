@@ -8,7 +8,7 @@ A: Currently, we support all stable versions of the Hotspot JVM. We are also pla
 
 Q: **Is GCPlot free to use?**
 
-A: Yes, at the moment it's in _beta_ stage and completely free.
+A: Yes, cloud platform at the moment is in _beta_ stage and completely free. If you want to have a private installation of it in your company, contact us at [sales@gcplot.com](mailto:sales@gcplot.com).
 
 ---
 
