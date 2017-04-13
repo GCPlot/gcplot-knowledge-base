@@ -1,5 +1,11 @@
 {
 
-"links": false
+"links": {
+        "home": null,
+
+        "about": false,
+        "issues": false,
+        "contribute": false,
+    }
 
 }
