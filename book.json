@@ -1,3 +1,24 @@
 {
-
+    "plugins": [
+        "page-footer"
+    ],
+    "pluginsConfig": {
+        "page-footer": {
+            "description": "modified at",
+            "signature": "GCPlot",
+            "wisdom": "",
+            "format": "yyyy-MM-dd hh:mm:ss",
+            "copyright": "Copyright &#169; GCPlot",
+            "timeColor": "#666",
+            "copyrightColor": "#666",
+            "utcOffset": "0",
+            "isShowQRCode": false,
+            "baseUri": "https://gcplot.com",
+            "isShowIssues": false,
+            "repo": "",
+            "issueNum": "0",
+            "token": "",
+            "style": "normal"
+        }
+    }
 }
