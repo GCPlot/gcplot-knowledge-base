@@ -8,7 +8,7 @@
   * [Ways of sending logs](ways-of-sending-logs.md)
 * [FAQ](faq.md)
 * [Logs Connector Setup](log-files-processing.md)
-  * [Configuring analyze](log-files-processing/configuring-analyze.md)
+  * [Configuring Analyze Group](log-files-processing/configuring-analyze.md)
   * [Connector installation & configuration](log-files-processing/connector-installation-and-configuration.md)
   * [Troubleshooting](log-files-processing/troubleshooting.md)
 
