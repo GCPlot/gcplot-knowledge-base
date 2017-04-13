@@ -1,2 +1,9 @@
 {
+
+"links": {
+        "sidebar": {
+            "Custom link name": "https://customlink.com"
+        }
+}
+
 }
