@@ -4,13 +4,13 @@ Q: **What JVMs does your analyzer support?**
 
 A: Currently, we support all stable versions of the Hotspot JVM. We are also planning to start supporting Java 9 new log format very soon.
 
-
+---
 
 Q: **Is GCPlot free to use?**
 
 A: Yes, at the moment it's in _beta_ stage and completely free.
 
-
+---
 
 Q: **How to tell my JVM to start producing GC logs?**
 
@@ -18,19 +18,19 @@ A: Here are recommended parameters for the most detailed report:
 
 `-XX:+PrintGCDetails -XX:+PrintTenuringDistribution -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps -Xloggc:/path/to/file`
 
-
+---
 
 Q: **I believe that report you generate isn't correct. What should I do?**
 
 A: You should contact us directly by [support@gcplot.com](mailto:support@gcplot.com) or use [Google Forum](https://groups.google.com/forum/#!forum/gcplot). We will make sure that any bug will be fixed.
 
-
+---
 
 Q: **Can I select a particular interval while building the report?**
 
 A: Of course. You can set the interval to the exact second, while the width of the interval can be started from the minute.
 
-
+---
 
 Q: **Which timezone is used for the reports?**
 
