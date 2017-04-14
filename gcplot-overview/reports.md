@@ -72,5 +72,5 @@ This tab shows a lot of graphs related to VM memory consumption and rate values.
 
 * `Heap Total Size`
 
-This all can be very helpful in understanding of the load on memory, notice memory leaks, how much time you promote possible garbage and so on. If any graphs are missing, it means we don't have enough data to show it.
+If any graphs are missing, it means we don't have enough data from raw logs to show it.
 
