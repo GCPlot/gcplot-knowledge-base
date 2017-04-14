@@ -24,5 +24,11 @@ If Time Range check box is not selected, the whole day will be considered.
 
 #### General Stats
 
+General Stats page just shows brief info about the file/JVM - initial and last GC event dates, name, etc.
+
+Also, sometimes GC log file contains info about JVM flags used to start your VM, server RAM/Swap memory status. We will also show everything here.
+
+#### Pauses
+
 
 

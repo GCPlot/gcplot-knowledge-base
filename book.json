@@ -1,10 +1,13 @@
 {
     "plugins": [
-      "footer"
+      "footer", "ga"
     ],
   "pluginsConfig": {
     "layout": {
       "footerPath" : "layouts/footer.html"
+    },
+    "ga": {
+      "token": "UA-88807066-1"
     }
   }
 }
