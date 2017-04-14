@@ -3,7 +3,7 @@
 * [Introduction to GCPlot](README.md)
   * [GCPlot Overview](gcplot-overview.md)
     * [Your Profile](gcplot-overview/you-profile.md)
-    * [Analyze Groups](gcplot-overview/analyze-groups.md)
+    * [Analysis Groups](gcplot-overview/analyze-groups.md)
     * [Reports](gcplot-overview/reports.md)
   * [Ways of sending logs](ways-of-sending-logs.md)
 * [FAQ](faq.md)
