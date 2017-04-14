@@ -38,17 +38,39 @@ Percentiles shows the distribution of STW pauses by the percent of occurrence:
 
 For example, line `99% | 117.416` means that 99% of STW events are under 117.416 milliseconds.
 
-There are also four graphs: 
+There are also four graphs:
 
-* `Pause Durations (Stop-The-World only)` - pauses in milliseconds
+* `Pause Durations (Stop-The-World only)` - GC pauses in milliseconds
 
-* `Log(x) Pause Durations (Stop-The-World only)` - Log10\(x\) of pauses, which is very helpful for seeing distribution of low values
+* `Log(x) Pause Durations (Stop-The-World only)` - Log10\(x\) of GC pauses, which is very helpful for seeing distribution of low values
 
 * `Concurrent Phase Durations (Non-STW)` - concurrent collections durations in milliseconds \(if available\)
 
 * `Log(x) Concurrent Phase Durations (Non-STW)` - Log10\(x\) of concurrent durations \(if available\)
 
-And finally you can see how much time does STW and Concurrent collections took comparing to the whole time application was running: 
+And finally you can see how much time does STW and Concurrent collections took comparing to the whole time application was running:
 
 ![](/assets/Screen Shot 2017-04-14 at 10.34.01 AM.png)
+
+#### Memory
+
+This tab shows a lot of graphs related to VM memory consumption and rate values. We will describe each briefly:
+
+* `Promotion Rate` - the rate \(MB/second\) at which objects gets promoted from Young to Tenured space
+* `Allocation Rate` - the rate \(MB/second\) at which new objects are being created
+* `Young Generation Used Before GC` - the size of Young generation before garbage collection happens \(Eden + Survivor spaces\)
+* `Young Generation Used After GC` - the size of Young generation after garbage collections. Typically, it's the size of Survivor space.
+* `Young Total Size` - total size of Young generation.
+
+* `Tenured Used` - the size of allocated memory in the Tenured space at each point of time.
+
+* `Tenured Total Size` - the total Tenured space size at each point of time. Can differ when Adaptive Policy is enabled.
+
+* `Heap Used Before GC` - total Heap occupation before any garbage collection event.
+
+* `Heap Used After GC` - Heap occupation after each garbage collection.
+
+* `Heap Total Size`
+
+This all can be very helpful in understanding of the load on memory, notice memory leaks, how much time you promote possible garbage and so on. If any graphs are missing, it means we don't have enough data to show it.
 
