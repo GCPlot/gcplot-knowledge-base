@@ -10,13 +10,11 @@ We have tried to solve this with the thing called **Analysis Group**. Inside it 
 
 Here is a simple diagram which shows the typical flow \(read more about our GCPlot Connector in [this section](/log-files-processing.md)\):
 
-![](/assets/Untitled Diagram %282%29.png)
+![](/assets/Untitled Diagram %283%29.png)
 
 This is the screenshot of such structure created in GCPlot UI:
 
 ![](/assets/Screen Shot 2017-04-14 at 8.47.53 AM.png)
 
-So, basically, the main purpose of Analysis Groups is to aggregate some JVM's reports under some logical group. You can also manage such things as Timezone, Logs Source, etc from it. This will apply to all JVMs inside it. 
-
-
+So, basically, the main purpose of Analysis Groups is to aggregate some JVM's reports under some logical group. You can also manage such things as Timezone, Logs Source, etc from it. This will apply to all JVMs inside it.
 
