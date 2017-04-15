@@ -18,3 +18,9 @@ This is the screenshot of such structure created in GCPlot UI:
 
 So, basically, the main purpose of Analysis Groups is to aggregate some JVM's reports under some logical group. You can also manage such things as Timezone, Logs Source, etc from it. This will apply to all JVMs inside it.
 
+#### Analysis Group ID
+
+You can find the ID of Analysis Group by clicking on `info` box in the left sidebar. You will also be able to change different configurations here:
+
+![](/assets/Screen Shot 2017-04-15 at 10.56.38 PM.png)
+

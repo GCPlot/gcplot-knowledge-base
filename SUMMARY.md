@@ -11,7 +11,7 @@
       * [Tenuring Stats](gcplot-overview/reports/tenuring-stats.md)
       * [Generations](gcplot-overview/reports/generations.md)
       * [Phases & Causes](gcplot-overview/reports/phases-and-causes.md)
-  * [Ways of sending logs](ways-of-sending-logs.md)
+  * [Ways of sending data](ways-of-sending-logs.md)
 * [FAQ](faq.md)
 * [Logs Connector Setup](log-files-processing.md)
   * [Configuring Analyze Group](log-files-processing/configuring-analyze.md)
