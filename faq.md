@@ -36,3 +36,9 @@ Q: **Which timezone is used for the reports?**
 
 A: All reports are in the timezone of the parent Analysis Group, which can be configured at the creation time, or modified anytime later. On the server side we store everything in UTC.
 
+---
+
+Q: **Can I use data from GCPlot in other places?**
+
+A: Yes. Just make sure you add "Generated with GCPlot" text below any screenshot or any other form of information copied from GCPlot.
+
