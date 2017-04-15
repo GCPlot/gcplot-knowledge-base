@@ -98,7 +98,9 @@ Each cell contains **average/min/max observed** value for the given generation. 
 
 For example: at one point of time we observed min Young as `5mb`, and in another time Tenured min was `10mb`. At third time we noticed Heap min size as `15mb`. At first glance, all three events were at the same time! But if `-XX:+UseAdaptiveSizePolicy` was enabled, all the magic ruins. When Young was just `5mb`, the Tenured easily might be `1gb`. So, please be accurate in your analysis and estimation.
 
-#### Phases & Causes 
+#### Phases & Causes
+
+
 
 
 
