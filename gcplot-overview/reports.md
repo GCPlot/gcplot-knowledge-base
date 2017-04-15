@@ -94,9 +94,11 @@ One note should be done here. Consider next table:
 | Tenured | `4.691 GB` | `2.132 GB` | `7.612 GB` |
 | Heap | `6.672 GB` | `2.420 GB` | `9.643 GB` |
 
-Each cell contains **average/min/max observed** value for the given generation. So, the rule like Young+Tenured=Heap may not work here. 
+Each cell contains **average/min/max observed** value for the given generation. So, the rule like Young+Tenured=Heap may not work here.
 
 For example: at one point of time we observed min Young as `5mb`, and in another time Tenured min was `10mb`. At third time we noticed Heap min size as `15mb`. At first glance, all three events were at the same time! But if `-XX:+UseAdaptiveSizePolicy` was enabled, all the magic ruins. When Young was just `5mb`, the Tenured easily might be `1gb`. So, please be accurate in your analysis and estimation.
+
+#### Phases & Causes 
 
 
 
