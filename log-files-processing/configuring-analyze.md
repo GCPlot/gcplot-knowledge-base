@@ -19,13 +19,13 @@ This is an option for GCPlot to take JVM GC log files from external S3 storage, 
 * `Region` - the Amazon region where your bucket is located.
 * `Path Prefix` - the path to the root folder where log files will reside.
 
-And that's it! If properly configured, [gcpc](/log-files-processing/connector-installation-and-configuration.md) will upload all your GC log files into this S3 storage, and GCPlot Platform will then be taking them from here as well. 
+And that's it! If properly configured, [gcpc](/log-files-processing/connector-installation-and-configuration.md) will upload all your GC log files into this S3 storage, and GCPlot Platform will then be taking them from here as well.
 
 > ### Important!
 >
-> If you wish to use your own S3 storage, the next operations **must be available** to GCPlot and [gcpc](/log-files-processing/connector-installation-and-configuration.md): PUT and DELETE.
+> If you wish to use your own S3 storage, the next operations **must be available** to GCPlot and [gcpc](/log-files-processing/connector-installation-and-configuration.md): **PUT** and **DELETE**.
 >
-> If you matter about security, the best option is to create a new dedicated user in S3 and jail it into some folder \(Path Prefix\) with only PUT and DELETE access rights. Like this:
+> If you worry about security, the best option is to create a new dedicated user in AWS and jail it into some S3 folder with only PUT and DELETE access rights. Like this:
 >
 > ```
 > {
@@ -46,7 +46,7 @@ And that's it! If properly configured, [gcpc](/log-files-processing/connector-in
 > }
 > ```
 >
-> That way, when you will configure Data Source, `mybucket` will be **Bucket Name** and `gcplot-logs/` will be **Path Prefix**.
+> That way, when you will configure Data Source, `mybucket` will be a **Bucket Name** and `gcplot-logs/` will be the **Path Prefix**.
 >
 > In that case, GCPlot wouldn't has an access to any other resources in the bucket. Such case is also described in our [example](/log-files-processing/example.md) page with all screenshots.
 
