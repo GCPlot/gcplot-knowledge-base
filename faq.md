@@ -38,7 +38,7 @@ A: All reports are in the timezone of the parent Analysis Group, which can be co
 
 ---
 
-Q: **Can I use data from GCPlot in other places?**
+Q: **Can I copy data from GCPlot and use it in other places?**
 
 A: Yes. Just make sure you add "Generated with GCPlot" text below any screenshot or any other form of information copied from GCPlot.
 

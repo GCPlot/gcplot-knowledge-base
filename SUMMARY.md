@@ -14,7 +14,8 @@
   * [Ways of sending data](ways-of-sending-logs.md)
 * [FAQ](faq.md)
 * [Logs Connector Setup](log-files-processing.md)
-  * [Configuring Analyze Group](log-files-processing/configuring-analyze.md)
-  * [Connector installation & configuration](log-files-processing/connector-installation-and-configuration.md)
+  * [Data Source Configuration](log-files-processing/configuring-analyze.md)
+  * [Installation](log-files-processing/connector-installation-and-configuration.md)
+  * [Configuration](log-files-processing/configuration.md)
   * [Troubleshooting](log-files-processing/troubleshooting.md)
 
