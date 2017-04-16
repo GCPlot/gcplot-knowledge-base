@@ -20,6 +20,12 @@ A: Here are recommended parameters for the most detailed report:
 
 ---
 
+Q: **Is it secure to use GCPlot?**
+
+A: Absolutely. We use SSL connections **everywhere**, encrypted databases, making sure no single bit of your private information being transmitted openly.
+
+---
+
 Q: **I believe that report you generate isn't correct. What should I do?**
 
 A: You should contact us directly by [support@gcplot.com](mailto:support@gcplot.com) or use [Google Forum](https://groups.google.com/forum/#!forum/gcplot). We will make sure that any bug will be fixed.

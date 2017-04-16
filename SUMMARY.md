@@ -13,7 +13,6 @@
       * [Phases & Causes](gcplot-overview/reports/phases-and-causes.md)
 * [FAQ](faq.md)
 * [Ways of sending data](ways-of-sending-logs.md)
-* Security
 * [GCPlot Connector](log-files-processing.md)
   * [Data Source Configuration](log-files-processing/configuring-analyze.md)
   * [gcpc Tool](log-files-processing/connector-installation-and-configuration.md)
