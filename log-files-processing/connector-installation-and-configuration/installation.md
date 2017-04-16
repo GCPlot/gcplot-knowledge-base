@@ -1,6 +1,6 @@
 # Installation
 
-This page is a description of `gcpc` agent installation on the different platforms using different approaches.
+This page is a description of `gcpc` agent installation using different approaches.
 
 ## Downloads
 
