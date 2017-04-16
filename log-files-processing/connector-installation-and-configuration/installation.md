@@ -6,6 +6,10 @@ This page is a description of `gcpc` agent installation on the different platfor
 
 0.0.2 \[[tar.gz](https://downloads.gcplot.com/connector/gcpc-0.0.2.tar.gz)\] \[[deb](https://downloads.gcplot.com/connector/bin/gcpc_0.0.2-1_all.deb)\] \[[rpm](https://downloads.gcplot.com/connector/bin/gcpc-0.0.2-2.all.rpm)\]
 
+## Requirements
+
+`gcpc` requires Java SE/JDK of version 7+ to be installed on the target machine. You can also change Java Home directory using tool [configuration](/log-files-processing/connector-installation-and-configuration/configuration.md).
+
 ## APT \(Linux/Debian\)
 
 The easiest way to install `gcpc` on Linux/Debian is to use `apt` package manager.
@@ -85,7 +89,26 @@ $ useradd -r gcpc -d /opt/gcpc -s /bin/bash
 $ chown -R gcpc:gcpc /opt/gcpc
 ```
 
+Now the task is to separate your `gcpc` confguration file from the installation directory:
 
+```
+$ mv /opt/gcpc/bin/settings /etc/default/gcpc
+```
 
+Finally, open the `/opt/gcpc/bin/gcpc` file in a text edit of your choice \(vim, nano, etc\). You will notice this lines in the begging:
 
+```
+GCP_CONFIG=$GCP_DIRECTORY/bin/settings
+GCP_USER=gcpc
+```
+
+Change `GCP_CONFIG` appropriately to:
+
+```
+GCP_CONFIG=/opt/default/gcpc
+```
+
+and also change `GCP_USER` to the user name under which you wish to run `gcpc`, if required.
+
+When all edits are complete, save and close the file.
 
