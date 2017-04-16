@@ -8,7 +8,7 @@ This page is a description of `gcpc` agent installation on the different platfor
 
 ## APT \(Linux/Debian\)
 
-The easiest way to install `gcpc` on Linux/Debian is to use `apt` package manager. 
+The easiest way to install `gcpc` on Linux/Debian is to use `apt` package manager.
 
 First of all, you have to add our repository to apt list of packages:
 
@@ -24,7 +24,7 @@ After that we are ready to install it:
 
 ## YUM \(Fedora\)
 
-You can also install `gcpc` via `yum` . 
+You can also install `gcpc` via `yum` .
 
 First create a new file **/etc/yum.repos.d/fury.repo**:
 
@@ -48,9 +48,7 @@ After that you are ready to install `gcpc`:
 
 `yum install gcpc`
 
-## Install from Tarball \(tar.gz\)
-
-
+## Install from Tarball \(tar.gz\) - macOS
 
 
 
