@@ -11,11 +11,14 @@
       * [Tenuring Stats](gcplot-overview/reports/tenuring-stats.md)
       * [Generations](gcplot-overview/reports/generations.md)
       * [Phases & Causes](gcplot-overview/reports/phases-and-causes.md)
-  * [Ways of sending data](ways-of-sending-logs.md)
 * [FAQ](faq.md)
-* [Logs Connector Setup](log-files-processing.md)
+* [Ways of sending data](ways-of-sending-logs.md)
+* [GCPlot Connector](log-files-processing.md)
   * [Data Source Configuration](log-files-processing/configuring-analyze.md)
-  * [Installation](log-files-processing/connector-installation-and-configuration.md)
+  * [gcpc Tool](log-files-processing/connector-installation-and-configuration.md)
+    * Installation
+    * Configuration
   * [Configuration](log-files-processing/configuration.md)
   * [Troubleshooting](log-files-processing/troubleshooting.md)
+  * [Example](log-files-processing/example.md)
 
