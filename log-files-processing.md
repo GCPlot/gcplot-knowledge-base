@@ -6,5 +6,5 @@ The easiest way to start with GCPlot Connector is to install & configure a speci
 
 Before connecting your JVM, you should first create and configure appropriately in the GCPlot Platform. [The next article](/log-files-processing/configuring-analyze.md) describes such configuration in details.
 
-You can also explore our [complete example](/log-files-processing/example.md) of GCPlot Connector functionality usage.
+You can explore our [complete example](/log-files-processing/example.md) of GCPlot Connector usage.
 
