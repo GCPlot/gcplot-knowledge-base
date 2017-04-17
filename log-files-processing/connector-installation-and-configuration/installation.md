@@ -74,12 +74,11 @@ $ wget https://downloads.gcplot.com/connector/gcpc-0.0.2.tar.gz
 $ tar xvfz gcpc-0.0.2.tar.gz
 ```
 
-After that all needed files will be extracted to the `gcpc-0.0.2/` directory. We will need to move them from the temporary directory:
+After that all files will be extracted to the `gcpc-0.0.2/` directory. We will need to move them from the temporary directory:
 
 ```
 $ mkdir -p /opt/gcpc
-$ cp -r /tmp/gcpc-0.0.2/ /opt/gcpc
-$ rm -rf /tmp/gcpc-0.0.2
+$ mv /tmp/gcpc-0.0.2/ /opt/gcpc
 ```
 
 That's it. Optionally, you can create a new user, which will be used to run an agent:
@@ -111,4 +110,48 @@ GCP_CONFIG=/opt/default/gcpc
 and also change `GCP_USER` to the user name under which you wish to run `gcpc`, if required.
 
 When all edits are complete, save and close the file.
+
+## Install from tar.gz \(macOS\)
+
+First let's see what user we are running:
+
+```
+$ whoami
+myuser
+```
+
+The next steps are the same as with other platforms - download, extract, move:
+
+```
+$ cd /tmp
+$ wget https://downloads.gcplot.com/connector/gcpc-0.0.2.tar.gz
+$ tar xvfz gcpc-0.0.2.tar.gz
+$ sudo mkdir -p /opt/gcpc
+$ sudo mv /tmp/gcpc-0.0.2/ /opt/gcpc
+```
+
+After that we need to move configuration file out of installation directory \(to save it during future updates\):
+
+```
+$ mkdir -p ~/.gcpc
+$ sudo mv settings ~/.gcpc/settings
+$ dirname ~/.gcpc
+/Users/myuser
+```
+
+So, `/Users/myuser/.gcpc/config`now is our path to the configuration file. Open the `/opt/gcpc/bin/gcpc` file in a text edit of your choice \(vim, nano, etc\). You will notice this lines in the begging:
+
+```
+GCP_CONFIG=$GCP_DIRECTORY/bin/settings
+GCP_USER=gcpc
+```
+
+Change `GCP_CONFIG` appropriately to:
+
+```
+GCP_CONFIG=/Users/myuser/.gcpc/config
+GCP_USER=myuser
+```
+
+Save and close the file. 
 
