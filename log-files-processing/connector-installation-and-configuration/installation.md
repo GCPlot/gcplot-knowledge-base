@@ -109,7 +109,7 @@ GCP_CONFIG=/opt/default/gcpc
 
 and also change `GCP_USER` to the user name under which you wish to run `gcpc`, if required.
 
-When all edits are complete, save and close the file.
+Save and close the file. Installation is ready.
 
 ## Install from tar.gz \(macOS\)
 
@@ -153,5 +153,5 @@ GCP_CONFIG=/Users/myuser/.gcpc/config
 GCP_USER=myuser
 ```
 
-Save and close the file. 
+Save and close the file. Installation is ready.
 
