@@ -95,23 +95,26 @@ $ useradd -r gcpc -d /opt/gcpc -s /bin/bash
 $ chown -R gcpc:gcpc /opt/gcpc
 ```
 
-Now the task is to separate your `gcpc` confguration file from the installation directory:
+Now the task is to separate your `gcpc` confguration file from the installation directory. Also we would want to move an executable to the `init.d` directory with Unix services:
 
 ```
 $ mv /opt/gcpc/bin/settings /etc/default/gcpc
+$ mv /opt/gcpc/bin/gcpc /etc/init.d/gcpc
 ```
 
 Finally, open the `/opt/gcpc/bin/gcpc` file in a text edit of your choice \(vim, nano, etc\). You will notice this lines in the begging:
 
 ```
+GCP_DIRECTORY=$PARENT_DIR
 GCP_CONFIG=$GCP_DIRECTORY/bin/settings
 GCP_USER=gcpc
 ```
 
-Change `GCP_CONFIG` appropriately to:
+Change `GCP_CONFIG` and `GCP_DIRECTORY` appropriately to:
 
 ```
-GCP_CONFIG=/opt/default/gcpc
+GCP_DIRECTORY=/opt/gcpc
+GCP_CONFIG=/etc/default/gcpc
 ```
 
 and also change `GCP_USER` to the user name under which you wish to run `gcpc`, if required.

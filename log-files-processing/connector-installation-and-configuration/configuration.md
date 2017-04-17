@@ -68,7 +68,7 @@ export ACCOUNT_TOKEN="8tnc94t787tg47q43gct4g3"
 
 ---
 
-#### ANALYZE\_GROUP_\__ID
+#### ANALYZE\_GROUP\_\_\_ID
 
 A unique ID of the Analysis Group, under which the JVM\(s\) which you want to connect are created.
 
@@ -84,7 +84,7 @@ export ANALYZE_GROUP_ID="141fbb62-cff5-4d1b-94e7-b9549d219d80"
 
 #### JVM\_IDS
 
-Fill that field with the JVM ID\(s\) from Analysis Group which GC logs you want to connect with. If you connect multiple JVMs on the same machine, fill them **comma-separated without whitespaces**. 
+Fill that field with the JVM ID\(s\) from Analysis Group which GC logs you want to connect with. If you connect multiple JVMs on the same machine, fill them **comma-separated without whitespaces**.
 
 You can find JVM ID by clicking on it in the left sidebar and going to Manage tab:
 
@@ -98,13 +98,13 @@ export JVM_IDS="18fa4c0d-2899-4257-b7d2-32aed4aa2a9b,358acf95-a92f-4262-ab15-200
 
 #### LOGS\_DIRS
 
-The list of directories where GC logs are located by each JVM. 
+The list of directories where GC logs are located by each JVM.
 
 > #### Important!
 >
-> The order, in which logs directories are passed into this parameter should exactly match the order in which JVM\_IDS are passed, so that gcpc can match each directory to each JVM ID. 
+> The order, in which logs directories are passed into this parameter should exactly match the order in which JVM\_IDS are passed, so that gcpc can match each directory to each JVM ID.
 >
-> For example, if logs directory for JVM "X" is "/X", and for JVM "Y" is "/Y", then parameters should look like: 
+> For example, if logs directory for JVM "X" is "/X", and for JVM "Y" is "/Y", then parameters should look like:
 >
 > ```
 > export JVM_IDS="X,Y"
@@ -132,5 +132,7 @@ Other fields has default values and could be omitted. We will describe them brie
 | USE\_HTTPS | Whether to use secure connections. By default true. Our general recommendation is to never change this value without a good reason. |
 | RELOAD\_CONFIG\_MS | How often to reload Analysis Group config from GCPlot. |
 
+# Running gcpc
 
+When all configuration work are done, all you have to do is run `gcpc`. If you installed it with APT, Yum, tar.gz \(Unix\), then 
 
