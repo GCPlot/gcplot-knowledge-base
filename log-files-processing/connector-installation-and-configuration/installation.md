@@ -2,6 +2,11 @@
 
 This page is a description of `gcpc` agent installation using different approaches.
 
+* [APT](#apt)
+* [Yum](#yum)
+* [tar.gz \(Unix\)](#targzunix)
+* [tar.gz \(macOS\)](#macos)
+
 ## Downloads
 
 0.0.2 \[[tar.gz](https://downloads.gcplot.com/connector/gcpc-0.0.2.tar.gz)\] \[[deb](https://downloads.gcplot.com/connector/bin/gcpc_0.0.2-1_all.deb)\] \[[rpm](https://downloads.gcplot.com/connector/bin/gcpc-0.0.2-2.all.rpm)\]
@@ -10,7 +15,7 @@ This page is a description of `gcpc` agent installation using different approach
 
 `gcpc` requires Java SE/JDK of version 7+ to be installed on the target machine. You can also change Java Home directory using tool [configuration](/log-files-processing/connector-installation-and-configuration/configuration.md).
 
-## APT \(Linux/Debian\)
+## APT \(Linux/Debian\) {#apt}
 
 The easiest way to install `gcpc` on Linux/Debian is to use `apt` package manager.
 
@@ -32,7 +37,7 @@ After that we are ready to install it:
 $ apt-get install gcpc
 ```
 
-## YUM \(Fedora\)
+## YUM \(Fedora\) {#yum}
 
 You can also install `gcpc` via `yum` .
 
@@ -64,7 +69,7 @@ After that you are ready to install `gcpc`:
 $ yum install gcpc
 ```
 
-## Install from tar.gz \(Unix\)
+## Install from tar.gz \(Unix\) {#targzunix}
 
 First step is to download the latest package of gcpc. Current latest version is 0.0.2:
 
@@ -111,7 +116,7 @@ and also change `GCP_USER` to the user name under which you wish to run `gcpc`, 
 
 Save and close the file. Installation is ready.
 
-## Install from tar.gz \(macOS\)
+## Install from tar.gz \(macOS\) {#macos}
 
 First let's see what user we are running:
 
