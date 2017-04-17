@@ -120,14 +120,14 @@ Save and close the file. Installation is ready.
 
 ## Install from tar.gz \(macOS\) {#macos}
 
-First let's see what user we are running:
+First, let's see what the user is currently used:
 
 ```
 $ whoami
 myuser
 ```
 
-The next steps are the same as with other platforms - download, extract, move:
+Remember that value, we will use it later. The next steps are the same as with other platforms - download, extract, move:
 
 ```
 $ cd /tmp
