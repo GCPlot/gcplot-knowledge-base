@@ -7,6 +7,8 @@ This page is a description of `gcpc` agent installation using different approach
 * [tar.gz \(Unix\)](#targzunix)
 * [tar.gz \(macOS\)](#macos)
 
+After the installation is complete, you have to go to the [Configuration page](/log-files-processing/connector-installation-and-configuration/configuration.md) to receive further instructions before running `gcpc`.
+
 ## Downloads
 
 0.0.2 \[[tar.gz](https://downloads.gcplot.com/connector/gcpc-0.0.2.tar.gz)\] \[[deb](https://downloads.gcplot.com/connector/bin/gcpc_0.0.2-1_all.deb)\] \[[rpm](https://downloads.gcplot.com/connector/bin/gcpc-0.0.2-2.all.rpm)\]
