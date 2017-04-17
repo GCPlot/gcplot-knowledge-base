@@ -134,5 +134,26 @@ Other fields has default values and could be omitted. We will describe them brie
 
 # Running gcpc
 
-When all configuration work are done, all you have to do is run `gcpc`. If you installed it with APT, Yum, tar.gz \(Unix\), then 
+When all configuration work are done, all you have to do is run `gcpc`. If you installed it with APT, Yum, tar.gz \(Unix\), then just call:
+
+```
+$ service gcpc start
+```
+
+Otherwise, start it from installation directory:
+
+```
+$ /opt/gcpc/bin/gcpc start
+```
+
+You can always check its status:
+
+```
+$ service gcpc status
+● gcpc.service
+   Loaded: loaded (/etc/init.d/gcpc; bad; vendor preset: enabled)
+   Active: active (exited) since Sun 2017-04-16 21:39:17 CEST; 24h ago
+```
+
+
 
