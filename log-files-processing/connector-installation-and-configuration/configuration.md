@@ -56,12 +56,81 @@ export TTL=86400000
 
 As you can see, you are obligated to fill 4 variables. We will iterate and describe each of them.
 
-| Name | Default Value | Description | Example |
-| :--- | :--- | :--- | :--- |
-| ACCOUNT\_TOKEN | - | This is your personal profile token. You can find it on your [personal profile](/gcplot-overview/you-profile.md) page. | export ACCOUNT\_TOKEN="8tnc94t787tg47q43gct4g3" |
-| ANALYZE\_GROUP\_ID | - | This is an ID of the [Analysis Group](/gcplot-overview/analyze-groups.md), under which the JVM\(s\) you want to connect are located. ![](/assets/Screen Shot 2017-04-17 at 9.06.10 PM.png) | export ANALYZE\_GROUP\_ID="141fbb62-cff5-4d1b-94e7-b9549d219d80" |
-| JVM\_IDS | - | Fill that field with JVM ID\(s\) from GCPlot Platform which you want to connect. Separate them **with comma without whitespaces**.![](/assets/Screen Shot 2017-04-17 at 9.12.41 PM.png) | export JVM\_IDS="18fa4c0d-2899-4257-b7d2-32aed4aa2a9b,358acf95-a92f-4262-ab15-200f57540583" |
-| LOGS\_DIRS | - |  |  |
+---
+
+#### ACCOUNT\_TOKEN
+
+This is your personal API token. You can find it on your [Personal Profile](/gcplot-overview/you-profile.md) page. Example:
+
+```bash
+export ACCOUNT_TOKEN="8tnc94t787tg47q43gct4g3"
+```
+
+---
+
+#### ANALYZE\_GROUP_\__ID
+
+A unique ID of the Analysis Group, under which the JVM\(s\) which you want to connect are created.
+
+![](/assets/Screen Shot 2017-04-17 at 9.34.08 PM.png)
+
+Example:
+
+```bash
+export ANALYZE_GROUP_ID="141fbb62-cff5-4d1b-94e7-b9549d219d80"
+```
+
+---
+
+#### JVM\_IDS
+
+Fill that field with the JVM ID\(s\) from Analysis Group which GC logs you want to connect with. If you connect multiple JVMs on the same machine, fill them **comma-separated without whitespaces**. 
+
+You can find JVM ID by clicking on it in the left sidebar and going to Manage tab:
+
+![](/assets/Screen Shot 2017-04-17 at 9.12.41 PM.png)Example of adding two JVMs:
+
+```
+export JVM_IDS="18fa4c0d-2899-4257-b7d2-32aed4aa2a9b,358acf95-a92f-4262-ab15-200f57540583"
+```
+
+---
+
+#### LOGS\_DIRS
+
+The list of directories where GC logs are located by each JVM. 
+
+> #### Important!
+>
+> The order, in which logs directories are passed into this parameter should exactly match the order in which JVM\_IDS are passed, so that gcpc can match each directory to each JVM ID. 
+>
+> For example, if logs directory for JVM "X" is "/X", and for JVM "Y" is "/Y", then parameters should look like: 
+>
+> ```
+> export JVM_IDS="X,Y"
+> export LOGS_DIRS="/X,/Y"
+> ```
+
+Example:
+
+```
+export LOGS_DIRS=/var/log/eu1,/var/log/eu2
+```
+
+---
+
+Other fields has default values and could be omitted. We will describe them briefly:
+
+| Name | Description |
+| :--- | :--- |
+| JAVA\_HOME | Custom Java Home location for gcpc. |
+| EXTENSION | The extension of GC log files to look. By default it's ".log". This shouldn't include rotations sub-extensions, like ".log.5" or ".log.current", as gcpc detects that automatically. |
+| JAVA\_PROC\_ARGS | JVM arguments for the gcpc process. |
+| DATA\_DIR | Directory where temporary and persistent data, needed for gcpc will be located. |
+| GCP\_APP\_LOG\_DIR | Application logs directory of the agent. Helpful for debug and troubleshooting. |
+| GCP\_HOST | Main API host of GCPlot. Should normally never be changed. |
+| USE\_HTTPS | Whether to use secure connections. By default true. Our general recommendation is to never change this value without a good reason. |
+| RELOAD\_CONFIG\_MS | How often to reload Analysis Group config from GCPlot. |
 
 
 
