@@ -4,7 +4,11 @@ GCPlot Connector is a special mechanism for continuous connection between GCPlot
 
 The easiest way to start with GCPlot Connector is to install & configure a special [gcpc tool](/log-files-processing/connector-installation-and-configuration.md) near your JVM\(s\), select "GCPlot Default" option in Logs Source \(in Analysis Group configuration\) - and enjoy! Nevertheless, other log sources are also supported, such as your custom S3 Storage. We are working further to extend this list.
 
-Before connecting your JVM\(s\), you should first register and configure it appropriately in the GCPlot Platform. [The next article](/log-files-processing/configuring-analyze.md) describes such configuration in the details. You should also know its [limitations](/log-files-processing/troubleshooting.md), so you make all needed pre-cautions.
+> #### Important!
+>
+> Please read our Limitations page carefully before considering connecting. If you have problems described here, make sure they are fixed before integration.
+
+Before connecting your JVM\(s\), you should first register and configure it appropriately in the GCPlot Platform. [The next article](/log-files-processing/configuring-analyze.md) describes such configuration in the details.
 
 You can explore our [complete example](/log-files-processing/example.md) of GCPlot Connector usage.
 
