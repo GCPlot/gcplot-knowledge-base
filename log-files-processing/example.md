@@ -64,7 +64,7 @@ Now I'd like to find out my "EU Cluster" analysis group and "cassandra" JVM IDs:
 
 ![](/assets/Screen Shot 2017-04-18 at 9.49.09 AM.png)![](/assets/Screen Shot 2017-04-18 at 9.49.36 AM.png)
 
-So, Analysis Group ID is "ba9d422b-9337-4462-8b1a-36487ef41462", and JVM ID is "6eea39a1-03b3-430f-ba18-2c57c0c5a797".
+So, Analysis Group ID is `ba9d422b-9337-4462-8b1a-36487ef41462`, and JVM ID is `6eea39a1-03b3-430f-ba18-2c57c0c5a797`.
 
 I'll also go to my [Profile page](/gcplot-overview/you-profile.md) to get my API Token, which will be needed for `gcpc`
 

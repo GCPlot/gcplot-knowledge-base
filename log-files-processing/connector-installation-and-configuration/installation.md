@@ -30,13 +30,13 @@ $ echo "deb [trusted=yes] https://repo.fury.io/gcplotdev/ /" >> /etc/apt/sources
 Then we need to force `apt` to update:
 
 ```
-$ apt-get update
+$ sudo apt-get update
 ```
 
 After that we are ready to install it:
 
 ```
-$ apt-get install gcpc
+$ sudo apt-get install gcpc
 ```
 
 ## YUM \(Fedora\) {#yum}
@@ -62,13 +62,13 @@ gpgcheck=0
 After that check that everything is fine:
 
 ```
-$ yum --disablerepo=* --enablerepo=fury list available
+$ sudo yum --disablerepo=* --enablerepo=fury list available
 ```
 
 After that you are ready to install `gcpc`:
 
 ```
-$ yum install gcpc
+$ sudo yum install gcpc
 ```
 
 ## Install from tar.gz \(Unix\) {#targzunix}
@@ -91,15 +91,15 @@ $ mv /tmp/gcpc-0.0.2/ /opt/gcpc
 That's it. Optionally, you can create a new user, which will be used to run an agent:
 
 ```
-$ useradd -r gcpc -d /opt/gcpc -s /bin/bash
-$ chown -R gcpc:gcpc /opt/gcpc
+$ sudo useradd -r gcpc -d /opt/gcpc -s /bin/bash
+$ sudo chown -R gcpc:gcpc /opt/gcpc
 ```
 
 Now the task is to separate your `gcpc` confguration file from the installation directory. Also we would want to move an executable to the `init.d` directory with Unix services:
 
 ```
-$ mv /opt/gcpc/bin/settings /etc/default/gcpc
-$ mv /opt/gcpc/bin/gcpc /etc/init.d/gcpc
+$ sudo mv /opt/gcpc/bin/settings /etc/default/gcpc
+$ sudo mv /opt/gcpc/bin/gcpc /etc/init.d/gcpc
 ```
 
 Finally, open the `/opt/gcpc/bin/gcpc` file in a text edit of your choice \(vim, nano, etc\). You will notice this lines in the begging:
