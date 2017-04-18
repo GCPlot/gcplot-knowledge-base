@@ -12,10 +12,6 @@ If Time Range check box is not selected, the whole day will be considered.
 >
 > Note that we, of course, apply some sampling when showing you the graphs. But the algorithm for it is quite simple - the wider interval, the more sampled events. If you want to reduce the impact of sampling, just narrow down your date & time range on the interval of interest to you.
 
-#### JVM ID
-
-
-
 #### General Stats
 
 General Stats page just shows brief info about the file/JVM - initial and last GC event dates, name, etc.
