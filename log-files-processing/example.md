@@ -138,5 +138,13 @@ root@ubuntu-1gb-fra1-01:/var/log/cassandra# service gcpc status
   Process: 11982 ExecStart=/etc/init.d/gcpc start (code=exited, status=0/SUCCESS)
 ```
 
+You can also check `gcpc` application logs to make sure everything is smooth:
+
+```
+2017/04/18 07:10:58.871 INFO [c.g.c.Bootstrap] Starting GCPlot connector.
+2017/04/18 07:10:58.875 INFO [c.g.c.Bootstrap] Using Java Version 1.8.0_121 by Oracle Corporation, amd64 Linux 4.4.0-72-generic
+2017/04/18 07:11:01.253 INFO [c.g.c.Bootstrap] Starting directory [/var/log/cassandra] watcher daemon for JVM [6eea39a1-03b3-430f-ba18-2c57c0c5a797].
+```
+
 
 
