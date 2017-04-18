@@ -8,7 +8,5 @@ When `gcpc` is started, it scans logs directory continuously for the new data an
 
 You can find a very comprehensive guides about its [installation](/log-files-processing/connector-installation-and-configuration/installation.md) and [configuration](/log-files-processing/connector-installation-and-configuration/configuration.md), as well as an [example](/log-files-processing/example.md).
 
-### Limitations
-
 
 

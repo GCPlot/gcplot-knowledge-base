@@ -18,6 +18,6 @@
   * [gcpc Tool](log-files-processing/connector-installation-and-configuration.md)
     * [Installation](log-files-processing/connector-installation-and-configuration/installation.md)
     * [Configure & Run](log-files-processing/connector-installation-and-configuration/configuration.md)
-  * [Troubleshooting](log-files-processing/troubleshooting.md)
+  * [Limitations](log-files-processing/troubleshooting.md)
   * [Example](log-files-processing/example.md)
 
