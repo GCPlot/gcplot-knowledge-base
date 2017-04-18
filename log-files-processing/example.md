@@ -146,5 +146,21 @@ You can also check `gcpc` application logs to make sure everything is smooth:
 2017/04/18 07:11:01.253 INFO [c.g.c.Bootstrap] Starting directory [/var/log/cassandra] watcher daemon for JVM [6eea39a1-03b3-430f-ba18-2c57c0c5a797].
 ```
 
+You want to see DEBUG info here as well, just edit `/var/lib/gcpc/bin/logback.xml`:
+
+```
+   ...
+     <root level="debug">
+        <appender-ref ref="FILE_INFO" />
+    </root>
+   ...
+```
+
+Then restart gcpc:
+
+```
+root@ubuntu-1gb-fra1-01:~# service gcpc restart
+```
+
 
 
