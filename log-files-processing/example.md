@@ -150,7 +150,7 @@ After some time we can see that new logs were processed by GCPlot:
 
 ![](/assets/Screen Shot 2017-04-18 at 10.27.22 AM.png)
 
-You want to see DEBUG info here as well, just edit `/var/lib/gcpc/bin/logback.xml`:
+If you want to see DEBUG info here as well, just edit `/var/lib/gcpc/bin/logback.xml`:
 
 ```
    ...
