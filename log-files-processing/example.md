@@ -146,6 +146,10 @@ You can also check `gcpc` application logs to make sure everything is smooth:
 2017/04/18 07:11:01.253 INFO [c.g.c.Bootstrap] Starting directory [/var/log/cassandra] watcher daemon for JVM [6eea39a1-03b3-430f-ba18-2c57c0c5a797].
 ```
 
+After some time we can see that new logs were processed by GCPlot:
+
+![](/assets/Screen Shot 2017-04-18 at 10.27.22 AM.png)
+
 You want to see DEBUG info here as well, just edit `/var/lib/gcpc/bin/logback.xml`:
 
 ```
