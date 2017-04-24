@@ -140,7 +140,7 @@ When all configuration work are done, all you have to do is run `gcpc`. If you i
 $ service gcpc start
 ```
 
-For macOS installation use next command:
+For **macOS** installation use next command:
 
 ```
 $ ~/.gcpc/bin/gcpc start
@@ -155,7 +155,7 @@ $ service gcpc status
    Active: active (exited) since Sun 2017-04-16 21:39:17 CEST; 24h ago
 ```
 
-For macOS use:
+For **macOS** use:
 
 ```
 $ ~/.gcpc/bin/gcpc status
