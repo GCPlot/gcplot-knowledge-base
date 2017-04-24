@@ -143,9 +143,9 @@ $ sudo mv /tmp/gcpc-0.0.2/ /opt/gcpc
 After that we need to move configuration file out of installation directory \(to save it during future updates\):
 
 ```
-$ mkdir -p ~/.gcpc
-$ sudo mv settings ~/.gcpc/settings
-$ sudo mkdir -p /var/lib/gcpc
+$ mkdir -p ~/.gcpc/data
+$ mkdir -p ~/.gcpc/log
+$ mv settings ~/.gcpc/settings
 $ dirname ~/.gcpc
 /Users/myuser
 ```
@@ -164,7 +164,12 @@ GCP_CONFIG=/Users/myuser/.gcpc/config
 GCP_USER=myuser
 ```
 
+Open `/Users/myuser/.gcpc/config` file with any text edit and change next variables:
 
+```
+export DATA_DIR=/Users/myuser/.gcpc/data
+export GCP_APP_LOG_DIR=/Users/myuser/.gcpc/log
+```
 
 Save and close the file. Installation is ready.
 
