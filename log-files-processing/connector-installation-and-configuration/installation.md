@@ -145,6 +145,7 @@ After that we need to move configuration file out of installation directory \(to
 ```
 $ mkdir -p ~/.gcpc
 $ sudo mv settings ~/.gcpc/settings
+$ sudo mkdir -p /var/lib/gcpc
 $ dirname ~/.gcpc
 /Users/myuser
 ```
@@ -162,6 +163,8 @@ Change `GCP_CONFIG` appropriately to:
 GCP_CONFIG=/Users/myuser/.gcpc/config
 GCP_USER=myuser
 ```
+
+
 
 Save and close the file. Installation is ready.
 
