@@ -2,7 +2,7 @@
 
 Before starting `gcpc` agent you have to properly configure it, i.e. point to an actual Analysis Group and JVM\(s\) in the GCPlot Platform.
 
-The whole configuration is located in a single file, which location depends on your [installation](/log-files-processing/connector-installation-and-configuration/installation.md) method. For **APT**, **Yum**, **tar.gz** this is normally `/opt/default/gcpc`. Open it with the text editor of your choice, and you should notice a lot of variables, some of which are empty:
+The whole configuration is located in a single file, which location depends on your [installation](/log-files-processing/connector-installation-and-configuration/installation.md) method. For **APT**, **Yum**, **tar.gz** this is normally `/opt/default/gcpc` , for **macOS** it's `~/.gcpc/config`. Open it with the text editor of your choice, and you should notice a lot of variables, some of which are empty:
 
 ```bash
 #!/bin/bash
@@ -140,10 +140,10 @@ When all configuration work are done, all you have to do is run `gcpc`. If you i
 $ service gcpc start
 ```
 
-Otherwise, start it from installation directory:
+For macOS installation use next command:
 
 ```
-$ /opt/gcpc/bin/gcpc start
+$ ~/.gcpc/bin/gcpc start
 ```
 
 You can always check its status:
@@ -153,6 +153,12 @@ $ service gcpc status
 ● gcpc.service
    Loaded: loaded (/etc/init.d/gcpc; bad; vendor preset: enabled)
    Active: active (exited) since Sun 2017-04-16 21:39:17 CEST; 24h ago
+```
+
+For macOS use:
+
+```
+$ ~/.gcpc/bin/gcpc status
 ```
 
 

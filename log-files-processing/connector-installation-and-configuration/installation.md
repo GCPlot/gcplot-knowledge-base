@@ -136,21 +136,20 @@ Remember that value, we will use it later. The next steps are the same as with o
 $ cd /tmp
 $ wget https://downloads.gcplot.com/connector/gcpc-0.0.2.tar.gz
 $ tar xvfz gcpc-0.0.2.tar.gz
-$ sudo mkdir -p /opt/gcpc
-$ sudo mv /tmp/gcpc-0.0.2/ /opt/gcpc
+$ mkdir -p ~/.gcpc
+$ mv /tmp/gcpc-0.0.2/ ~/.gcpc
 ```
 
 After that we need to move configuration file out of installation directory \(to save it during future updates\):
 
 ```
-$ mkdir -p ~/.gcpc/data
-$ mkdir -p ~/.gcpc/log
-$ mv settings ~/.gcpc/settings
+$ mkdir -p ~/.gcpc/data && mkdir -p ~/.gcpc/log
+$ mv ~/.gcpc/bin/settings ~/.gcpc/settings
 $ dirname ~/.gcpc
 /Users/myuser
 ```
 
-So, `/Users/myuser/.gcpc/config`now is our path to the configuration file. Open the `/opt/gcpc/bin/gcpc` file in a text edit of your choice \(vim, nano, etc\). You will notice this lines in the begging:
+So, `/Users/myuser/.gcpc/config`now is our path to the configuration file. Open the `/Users/myuser/.gcpc/bin/gcpc` file in a text edit of your choice \(vim, nano, etc\). You will notice this lines in the begging:
 
 ```
 GCP_CONFIG=$GCP_DIRECTORY/bin/settings
