@@ -138,6 +138,7 @@ $ wget https://downloads.gcplot.com/connector/gcpc-0.0.2.tar.gz
 $ tar xvfz gcpc-0.0.2.tar.gz
 $ mkdir -p ~/.gcpc
 $ mv /tmp/gcpc-0.0.2/ ~/.gcpc
+$ chmod -R 755 ~/.gcpc
 ```
 
 After that we need to move configuration file out of installation directory \(to save it during future updates\):
