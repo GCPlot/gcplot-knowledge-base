@@ -13,9 +13,11 @@ After the installation is complete, you have to go to the [Configuration page](/
 
 0.0.2 \[[tar.gz](https://downloads.gcplot.com/connector/gcpc-0.0.2.tar.gz)\] \[[deb](https://downloads.gcplot.com/connector/bin/gcpc_0.0.2-1_all.deb)\] \[[rpm](https://downloads.gcplot.com/connector/bin/gcpc-0.0.2-2.all.rpm)\]
 
+0.0.3 \[[tar.gz](https://downloads.gcplot.com/connector/gcpc-0.0.3.tar.gz)\] \[[deb](https://downloads.gcplot.com/connector/bin/gcpc-0.0.3-1_all.deb)\] \[[rpm](https://downloads.gcplot.com/connector/bin/gcpc-0.0.3-2.all.rpm)\]
+
 ## Requirements
 
-`gcpc` requires Java SE/JDK of version 7+ to be installed on the target machine. You can also change Java Home directory using tool [configuration](/log-files-processing/connector-installation-and-configuration/configuration.md).
+`gcpc` requires Java SE/JDK of version 6+ to be installed on the target machine. You can also change Java Home directory using tool [configuration](/log-files-processing/connector-installation-and-configuration/configuration.md).
 
 ## APT \(Linux/Debian\) {#apt}
 
@@ -73,19 +75,19 @@ $ sudo yum install gcpc
 
 ## Install from tar.gz \(Unix\) {#targzunix}
 
-First step is to download the latest package of gcpc. Current latest version is 0.0.2:
+First step is to download the latest package of gcpc. Current latest version is 0.0.3:
 
 ```
 $ cd /tmp
-$ wget https://downloads.gcplot.com/connector/gcpc-0.0.2.tar.gz
-$ tar xvfz gcpc-0.0.2.tar.gz
+$ wget https://downloads.gcplot.com/connector/gcpc-0.0.3.tar.gz
+$ tar xvfz gcpc-0.0.3.tar.gz
 ```
 
-After that all files will be extracted to the `gcpc-0.0.2/` directory. We will need to move them from the temporary directory:
+After that all files will be extracted to the `gcpc-0.0.3/` directory. We will need to move them from the temporary directory:
 
 ```
 $ mkdir -p /opt/gcpc
-$ mv /tmp/gcpc-0.0.2/ /opt/gcpc
+$ mv /tmp/gcpc-0.0.3/ /opt/gcpc
 ```
 
 That's it. Optionally, you can create a new user, which will be used to run an agent:
@@ -134,10 +136,10 @@ Remember that value, we will use it later. The next steps are the same as with o
 
 ```
 $ cd /tmp
-$ wget https://downloads.gcplot.com/connector/gcpc-0.0.2.tar.gz
-$ tar xvfz gcpc-0.0.2.tar.gz
+$ wget https://downloads.gcplot.com/connector/gcpc-0.0.3.tar.gz
+$ tar xvfz gcpc-0.0.3.tar.gz
 $ mkdir -p ~/.gcpc
-$ mv /tmp/gcpc-0.0.2/ ~/.gcpc
+$ mv /tmp/gcpc-0.0.3/ ~/.gcpc
 $ chmod -R 755 ~/.gcpc
 ```
 
