@@ -15,6 +15,8 @@ After the installation is complete, you have to go to the [Configuration page](/
 
 0.0.3 \[[tar.gz](https://downloads.gcplot.com/connector/gcpc-0.0.3.tar.gz)\] \[[deb](https://downloads.gcplot.com/connector/bin/gcpc-0.0.3-1_all.deb)\] \[[rpm](https://downloads.gcplot.com/connector/bin/gcpc-0.0.3-2.all.rpm)\]
 
+0.0.4 \[[tar.gz](https://downloads.gcplot.com/connector/gcpc-0.0.4.tar.gz)\] \[[deb](https://downloads.gcplot.com/connector/bin/gcpc-0.0.4-1_all.deb)\] \[[rpm](https://downloads.gcplot.com/connector/bin/gcpc-0.0.3-2.all.rpm)\]
+
 ## Requirements
 
 `gcpc` requires Java SE/JDK of version 6+ to be installed on the target machine. You can also change Java Home directory using tool [configuration](/log-files-processing/connector-installation-and-configuration/configuration.md).
