@@ -12,11 +12,11 @@ This tab shows a lot of graphs related to VM memory consumption and rate values.
 
 * `Tenured Total Size` - the total Tenured space size at each point of time. Can differ when Adaptive Policy is enabled.
 
-* `Heap Used Before GC` - total Heap occupation before any garbage collection event.
+* `Heap Used Before GC` - total Heap occupation before any minor GC event.
 
-* `Heap Used After GC` - Heap occupation after each garbage collection.
+* `Heap Used After GC` - Heap occupation after each minor GC.
 
-* `Heap Total Size`
+* `Heap Total Size` - Total heap size.
 
-If any graphs are missing, it means we don't have enough data from raw logs to show it.
+If any graphs are missing, it means we don't have enough data from raw logs to render it.
 
