@@ -17,7 +17,7 @@ OpenJDK Runtime Environment (build 1.8.0_121-8u121-b13-0ubuntu1.16.04.2-b13)
 OpenJDK 64-Bit Server VM (build 25.121-b13, mixed mode)
 ```
 
-This matches Java 7+ requirement, so we can go on with installation:
+This matches Java 6+ requirement, so we can go on with installation:
 
 ```
 root@ubuntu-1gb-fra1-01:~# echo "deb [trusted=yes] https://repo.fury.io/gcplotdev/ /" >> /etc/apt/sources.list.d/fury.list

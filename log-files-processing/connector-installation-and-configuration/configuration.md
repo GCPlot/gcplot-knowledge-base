@@ -68,7 +68,7 @@ export ACCOUNT_TOKEN="8tnc94t787tg47q43gct4g3"
 
 ---
 
-#### ANALYZE\_GROUP\_\_\_ID
+#### ANALYZE\_GROUP\_ID
 
 A unique ID of the Analysis Group, under which the JVM\(s\) which you want to connect are created.
 
