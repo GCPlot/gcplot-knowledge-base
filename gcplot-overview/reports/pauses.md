@@ -1,6 +1,6 @@
 # Pauses
 
-This tab contains all the verbose stats & graphs about GC pauses - Young/Tenured/Full collections, split on STW \(Stop-The-World\) and Concurrent, Percentiles and etc.
+This tab contains all the verbose stats & graphs about GC pauses - Young/Tenured/Full collections, split on STW \(Stop-The-World\) and Concurrent; percentiles and etc.
 
 Percentiles shows the distribution of STW pauses by the percent of occurrence:
 
@@ -18,11 +18,11 @@ There are also four graphs:
 
 * `Log(x) Concurrent Phase Durations (Non-STW)` - Log10\(x\) of concurrent durations \(if available\)
 
-These are examples of such graphs built with our platform:
+These are examples of such graphs built from some log file:
 
 ![](/assets/Screen Shot 2017-04-15 at 8.58.34 PM.png)![](/assets/Screen Shot 2017-04-15 at 8.59.00 PM.png)![](/assets/Screen Shot 2017-04-15 at 8.59.23 PM.png)![](/assets/Screen Shot 2017-04-15 at 8.59.41 PM.png)
 
-And finally you can see how much time does STW and Concurrent collections took comparing to the whole time application was running:
+And finally you can see how much time does STW and Concurrent collections took relatively to the time where application-only was running:
 
 ![](/assets/Screen Shot 2017-04-14 at 10.34.01 AM.png)
 
