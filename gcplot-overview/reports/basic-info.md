@@ -4,7 +4,7 @@ In this panel, you can select the interval to build a report. There are two main
 
 ![](/assets/Screen Shot 2017-04-14 at 10.13.33 AM.png)
 
-By default we load the whole current day. The max limit for date range is 3 months.
+By default we load the whole last day. The max limit for date range is 3 months.
 
 If Time Range check box is not selected, the 00:00:00-23:59:59 will be considered.
 
