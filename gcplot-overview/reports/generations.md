@@ -1,6 +1,6 @@
 # Generations
 
-This is where the most detailed stats & info about each GC Generation falls. There are tables with total, occupied sizes by Generation, as well as STW pauses graphs, and, finally, the numerous statistical info, like Total, Min/Max, Average pause times, average interval between events and so on.
+This is where the most detailed stats & info about each GC Generation is located. There are tables with total, occupied sizes by Generation, as well as cumulative STW pauses graphs, and, finally, the numerous statistical info, like Total, Min/Max, Average pause times, average interval between events and so on.
 
 One note should be done here. Consider next table:
 
