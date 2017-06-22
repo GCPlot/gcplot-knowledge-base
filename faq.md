@@ -34,13 +34,13 @@ A: You should contact us directly by [support@gcplot.com](mailto:support@gcplot.
 
 Q: **Can I select a particular interval while building the report?**
 
-A: Of course. You can set the interval to the exact second, while the width of the interval can be started from the minute.
+A: Of course. You can set the interval with the precision to the exact second, while the width of the interval can be started from the minute.
 
 ---
 
 Q: **Which timezone is used for the reports?**
 
-A: All reports are in the timezone of the parent Analysis Group, which can be configured at the creation time, or modified anytime later. On the server side we store everything in UTC.
+A: You should select the timezone of your comfort for your reports. On the server side we store everything in UTC.
 
 ---
 
