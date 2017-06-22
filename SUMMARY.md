@@ -15,7 +15,7 @@
 * [Ways of sending data](ways-of-sending-logs.md)
 * [GCPlot Connector](log-files-processing.md)
   * [Data Source Configuration](log-files-processing/configuring-analyze.md)
-  * [gcpc Tool](log-files-processing/connector-installation-and-configuration.md)
+  * [gcpc Agent](log-files-processing/connector-installation-and-configuration.md)
     * [Installation](log-files-processing/connector-installation-and-configuration/installation.md)
     * [Configure & Run](log-files-processing/connector-installation-and-configuration/configuration.md)
   * [Limitations](log-files-processing/troubleshooting.md)
