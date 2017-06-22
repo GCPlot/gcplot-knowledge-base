@@ -1,22 +1,18 @@
 # Analysis Groups
 
-The central part of GCPlot is its ability to process GC logs and store the reports, be it single file uploaded by hands or realtime connection with the remote server. And here comes the typical problem for such cases - how to organize everything with the least complexity and the best usability.
-
-We have tried to solve this with the thing called **Analysis Group**. Inside it you can add any number of JVMs, each representing the unique VM instance, which runs on your server\(s\). There is also a special Analysis Group called **Files**, which contains all the GC log files uploaded [manually](/ways-of-sending-logs.md) \(via Quick Upload\).
+The central part of GCPlot is its ability to process GC logs and building the reports from it, either from single file uploaded by hands or real-time agent from the remote server. And quite often they need to be organized somehow. For that, you can create an **Analysis Group**. Inside it you can add any number of JVMs, each representing the unique VM instance, which runs on your server\(s\). There is also a special Analysis Group called **Files**, which contains all the GC log files uploaded [manually](/ways-of-sending-logs.md) \(via Quick Upload\).
 
 > #### Hint
 >
 > The best use case is to create the new Analysis Group for each cluster of servers you have.
 
-Here is a simple diagram which shows the typical flow \(read more about our GCPlot Connector in [this section](/log-files-processing.md)\):
+Here is a simple diagram which shows the typical flow:
 
 ![](/assets/Untitled Diagram %283%29.png)
 
-This is the screenshot of such structure created in GCPlot UI:
+This is the screenshot of such structure created in GCPlot UI:![](/assets/Screen Shot 2017-06-22 at 7.48.40 AM.png)
 
-![](/assets/Screen Shot 2017-04-16 at 5.54.10 PM.png)
-
-So, basically, the main purpose of Analysis Groups is to aggregate some JVM's reports under some logical group. You can also manage here things like Timezone, Data Source, etc. This settings will apply to all JVMs inside it.
+So, again, the main purpose of Analysis Group is to aggregate some JVM's reports under some logical structure. You can also manage here things like Timezone, Data Source, etc. This settings will apply to all JVMs inside it.
 
 #### JVMs {#jvms}
 
