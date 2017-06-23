@@ -28,7 +28,7 @@ The easiest way to install `gcpc` on Linux/Debian is to use `apt` package manage
 First of all, you have to add our repository to apt list of packages:
 
 ```
-$ echo "deb [trusted=yes] https://repo.fury.io/gcplotdev/ /" >> /etc/apt/sources.list.d/fury.list
+$ echo "deb [trusted=yes] https://repo.fury.io/gcplotdev/ /" | sudo tee -a /etc/apt/sources.list.d/fury.list
 ```
 
 Then we need to force `apt` to update:
