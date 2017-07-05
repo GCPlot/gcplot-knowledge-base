@@ -2,7 +2,7 @@
 
 You can manage your personal data by clicking on your name in the right upper corner and selecting Profile in the menu. This is how the form looks like:
 
-![](/assets/Screen Shot 2017-04-13 at 9.28.59 PM.png)
+![](/assets/Screen Shot 2017-07-05 at 11.02.33 PM.png)
 
 As you can see, you can manage your username, e-mail, password and change it.
 
