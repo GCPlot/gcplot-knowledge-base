@@ -8,6 +8,12 @@ Percentiles shows the distribution of STW pauses by the percent of occurrence:
 
 For example, line `99% | 117.416` means that 99% of STW events are under 117.416 milliseconds.
 
+GCPlot can also calculate very useful average rates for the selected interval, like in the next example:
+
+![](/assets/Screen Shot 2017-07-05 at 11.23.30 PM.png)
+
+This means that for each minute the cumulative average STW pause is ~853 ms, which is produced by ~22 events. In other words, for each 60 seconds the application is fully stopped for  ~853 ms.
+
 There are also four graphs:
 
 * `Pause Durations (Stop-The-World only)` - GC pauses in milliseconds
