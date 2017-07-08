@@ -13,7 +13,7 @@ After the installation is complete, you have to go to the [Configuration page](/
 
 0.0.4 \[[tar.gz](https://downloads.gcplot.com/connector/gcpc-0.0.4.tar.gz)\] \[[deb](https://downloads.gcplot.com/connector/bin/gcpc-0.0.4-1_all.deb)\] \[[rpm](https://downloads.gcplot.com/connector/bin/gcpc-0.0.3-2.all.rpm)\]
 
-0.0.5 \[[tar.gz](https://downloads.gcplot.com/connector/gcpc-0.0.5.tar.gz)\] \[[deb](https://downloads.gcplot.com/connector/bin/gcpc-0.0.5-1_all.deb)\] \[[rpm](https://downloads.gcplot.com/connector/bin/gcpc-0.0.5-2.all.rpm)\]
+0.0.5 \[[tar.gz](https://downloads.gcplot.com/connector/gcpc-0.0.5.tar.gz)\] \[[deb](https://downloads.gcplot.com/connector/bin/gcpc-0.0.5-2_all.deb)\] \[[rpm](https://downloads.gcplot.com/connector/bin/gcpc-0.0.5-3.all.rpm)\]
 
 ## Requirements
 
