@@ -23,7 +23,6 @@ If properly configured, [gcpc](/log-files-processing/connector-installation-and-
 
 #### Important!
 
-  
 If you wish to use your own S3 storage, the next operations must be available to GCPlot and gcpc: **PUT** and **DELETE**.  
 If you worry about security, the best option is to create a new dedicated user in AWS and jail it into some S3 folder with only **PUT** and **DELETE** access rights. Like this:
 
@@ -46,15 +45,6 @@ If you worry about security, the best option is to create a new dedicated user i
 }
 ```
 
-  
 That way, when you will configure Data Source, `mybucket` will be a Bucket Name and `gcplot-logs/` will be the Path Prefix.  
-In that case, GCPlot wouldn't has an access to any other resources in the bucket. Such case is also described in our example page with all screenshots.**  
-  
-  
-**
-
-  
-
-
-
+In that case, GCPlot wouldn't has an access to any other resources in the bucket. Such case is also described in our [example](/log-files-processing/example.md) page with all screenshots.
 
