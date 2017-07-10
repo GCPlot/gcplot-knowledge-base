@@ -10,7 +10,7 @@ This is the easiest option, which normally should be your default choice. If you
 
 No additional configuration is required.
 
-#### External S3 Storage
+#### External S3 Storage {#external-s3-storage}
 
 This is an option for GCPlot to take JVM GC log files from external S3 storage, which is owned by you. The configuration page looks like this:![](/assets/Screen Shot 2017-04-16 at 6.22.27 PM.png)
 
@@ -19,7 +19,7 @@ This is an option for GCPlot to take JVM GC log files from external S3 storage, 
 * `Region` - the Amazon region where your bucket is located.
 * `Path Prefix` - the path to the root folder where log files will reside.
 
-And that's it! If properly configured, [gcpc](/log-files-processing/connector-installation-and-configuration.md) will upload all your GC log files into this S3 storage, and GCPlot Platform will then be taking them from here as well.
+If properly configured, [gcpc](/log-files-processing/connector-installation-and-configuration.md) will upload all your GC log files into this S3 storage, and GCPlot Platform will then be taking them from here as well.
 
 > ### Important!
 >
